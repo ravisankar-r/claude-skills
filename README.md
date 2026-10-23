@@ -8,7 +8,7 @@ Personal skills library for [Claude Code](https://docs.anthropic.com/en/docs/cla
 |-------|---------|
 | [`architecture-reviewer`](./architecture-reviewer/SKILL.md) | Reviews technical plans, design docs, and architecture proposals with deep specificity across all system dimensions |
 | [`blog-reviewer`](./blog-reviewer/SKILL.md) | Critical review of blog post drafts — authenticity, logic, grammar, AI slop detection |
-| [`first-principles-tutor`](./first-principles-tutor/SKILL.md) | Deep-learning tutor using Socratic questioning and exercises that force genuine understanding |
+| [`first-principles-tutor`](./first-principles-tutor/SKILL.md) | Socratic tutor — first-principles questioning, runnable predict/run/reconcile experiments, and a per-topic learning log |
 | [`pr-reviewer`](./pr-reviewer/SKILL.md) | Code review for PRs — correctness, bugs, security, performance, scalability |
 | [`prd`](./prd/SKILL.md) | Generate Product Requirements Documents for new features |
 | [`ralph`](./ralph/SKILL.md) | Convert PRDs to prd.json format for the Ralph autonomous agent system |
