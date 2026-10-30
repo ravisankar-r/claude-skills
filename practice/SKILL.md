@@ -9,7 +9,7 @@ Runs the user's daily practice from `~/Workspace/focus` (called `F` below). Clau
 
 ## Session start
 
-1. Run `date '+%F %a'`. Read `F/log/review-queue.md`, `F/log/progress.md`, and every file in `F/log/sessions/` dated from 7 days ago to today (if none is that recent, the latest one). Don't read the README, plan or research at the start; open a plan file only when a step names it.
+1. Run `date '+%F %a'`. Read `F/log/review-queue.md`, `F/log/progress.md`, and every file in `F/log/sessions/` dated from 7 days ago to today (if none is that recent, the latest one). Don't read the README, plan or research at the start; open a plan file only when a step names it. Run `git -C F status --porcelain --branch`; if it lists changed files or says `ahead`, an earlier session wasn't saved, so save it now as in Saving, with message `log: catch-up`.
 2. Build the agenda in this order, leaving out anything already done today:
 
 | Order | Condition | Item |
@@ -149,6 +149,10 @@ Write `F/log/sessions/<date>.md` as you go, keeping only the sections used today
 ```
 
 The Speaking heading is `drill (opinion|explanation|story)`, `memo` or `memo (new topic)`. A finished carry-over line gets `(done <date>)`; one put off again gets `(moved <date>)`.
+
+## Saving
+
+`F` is a private GitHub repo. When the agenda is finished or the user stops, save before your last message: `git -C F add -A`, then `git -C F commit -q -m "log: <date>"` if anything is staged, then `git -C F push -q`. If the push fails, say so in one line; the commit stays local and the next session start pushes it.
 
 ## Privacy
 
