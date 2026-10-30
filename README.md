@@ -10,6 +10,7 @@ Personal skills library for [Claude Code](https://docs.anthropic.com/en/docs/cla
 | [`blog-reviewer`](./blog-reviewer/SKILL.md) | Critical review of blog post drafts — authenticity, logic, grammar, AI slop detection |
 | [`first-principles-tutor`](./first-principles-tutor/SKILL.md) | Socratic tutor — first-principles questioning, runnable predict/run/reconcile experiments, and a per-topic learning log |
 | [`pr-reviewer`](./pr-reviewer/SKILL.md) | Code review for PRs — correctness, bugs, security, performance, scalability |
+| [`practice`](./practice/SKILL.md) | Daily focus practice from `~/Workspace/focus` — picks what's due, coaches without giving answers, logs progress and spaced reviews |
 | [`prd`](./prd/SKILL.md) | Generate Product Requirements Documents for new features |
 | [`ralph`](./ralph/SKILL.md) | Convert PRDs to prd.json format for the Ralph autonomous agent system |
 
@@ -39,6 +40,7 @@ Skills trigger automatically based on their descriptions, or invoke explicitly:
 /blog-reviewer
 /prd
 /ralph
+/practice
 ```
 
 ## Structure
